@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.gt.listeners.TestListeners"/>
+    <listener class-name="com.gt.listeners.MethodInterceptor"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="RegressionSuite(failed)">
+    <classes>
+      <class name="com.gt.test.SevenBoss">
+        <methods>
+          <include name="setUp"/>
+          <include name="getPreExecutionDetails"/>
+          <include name="tearDown"/>
+          <include name="getPostExecutionDetails"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.gt.test.SevenBoss -->
+    </classes>
+  </test> <!-- RegressionSuite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

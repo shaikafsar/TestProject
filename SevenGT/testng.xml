@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.gt.listeners.TestListeners"/>
+        <listener class-name="com.gt.listeners.MethodInterceptor"/>
+    </listeners>
+    <test parallel="methods" thread-count="2" name="SevenGT">
+        <classes>
+            <class name="com.gt.test.SevenBoss"/>
+            <class name="com.gt.test.SevenBoss"/>
+        </classes>
+    </test>
+</suite>
